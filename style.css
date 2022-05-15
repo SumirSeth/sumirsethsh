@@ -1,0 +1,87 @@
+body {
+    
+    background-image: url('media/iamallofus.png'); 
+    background-color: #4e6868;
+    animation: AnimationName 12s;
+    overflow: hidden;
+}
+
+@keyframes AnimationName {
+    /* 0%{background-position:0% 100%}
+    25%{background-position:0% 200%}
+    50%{background-position: 300% 200%;}
+    75%{background-position:300% 100%}
+    100%{background-position: 0% 100%;} */
+    0%{background-position: 0% 0%; background-color: rgb(33, 68, 68);}
+    100%{background-position: 500% 0%; background-color: #4e6868;}
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    height: 98.4vh;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.folder{
+    position: relative;
+    height: 4.5vmax;
+    width: auto;
+    animation: Folder 6s;
+    box-shadow: rgb(0 0 0 / 94%) 7px 9px 0px 0px;
+    transition: all ease 0.4s;
+}
+
+
+#folder1{
+    bottom: 40%;
+    right: 60%;
+    
+}
+#folder2{
+    top: 50vh;
+    right: 10vw;
+    
+}
+#folder3{
+    /* top: 20%; */
+    left: 30%;
+    
+}
+
+
+#thoughts /*aka folder4*/{
+    top: 10vh;
+    left: 180%;
+    
+}
+
+
+@keyframes Folder {
+    0%{opacity: 10%;}
+    50%{opacity: 0%;}
+    90%{opacity: 0%;}
+    100%{opacity: 100%;}
+}
+
+#curse{
+    height: 20vmax;
+    right:25%;
+    transition: all 0.4s ease-out;
+    box-shadow: none;
+}
+
+#curse:hover{
+    transform: scale(2);
+    transition: all 0.4s ease;
+    box-shadow: rgba(0, 0, 0, 0.939) 0px 220px 700px 8000px;
+    border-radius: 15px;
+}
+
+.folder:hover{
+    box-shadow: rgb(0 0 0 / 94%) 7px 9px 200px 0px;
+    transition: all ease 0.4s;
+    transform: scale(1.2);
+}

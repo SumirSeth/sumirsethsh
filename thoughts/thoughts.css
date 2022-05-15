@@ -1,0 +1,132 @@
+body{
+    background-color: #4e6868;
+    overflow: hidden;
+    animation: AnimationName infinite 20s;
+}
+
+@keyframes AnimationName {
+    0%{background-position: 500% 0%; background-color: #4e6868;}
+    25%{background-position: 0% 0%; background-color: rgb(33, 68, 68);}
+    50%{background-position: 0% 0%; background-color: rgb(47, 204, 204);}
+    75%{background-position: 0% 0%; background-color: rgb(5, 46, 46);}
+    100%{background-position: 500% 0%; background-color: #4e6868;}
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    height: 98.4vh;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.folder{
+    position: relative;
+    height: 4.5vmax;
+    width: auto;
+    animation: Folder 1.5s;
+    box-shadow: rgb(0 0 0 / 94%) 7px 9px 0px 0px;
+    transition: all ease 0.4s;
+}
+
+
+#folder1{
+    bottom: 20vh;
+    right: 20vw;
+    
+}
+#folder2{
+    display: none;
+    top: 40vh;
+    right: 10vw;
+    
+}
+#folder3{
+    bottom: 12vh;
+    left: 15vw;
+    
+}
+
+
+#thoughts /*aka folder4*/{
+    display: none;
+    top: 10vh;
+    left: 8vw;
+    
+}
+
+
+@keyframes Folder {
+    0%{opacity: 10%;}
+    50%{opacity: 0%;}
+    90%{opacity: 0%;}
+    100%{opacity: 100%;}
+}
+
+.folder:hover{
+    box-shadow: rgb(0 0 0 / 94%) 7px 9px 200px 0px;
+    transition: all ease 0.4s;
+    transform: scale(1.2);
+}
+
+
+
+.back{
+    position: absolute;
+    height: calc(0.5em + 2vmax);
+    filter: invert();
+    text-decoration: none;
+    font-size: calc(0.75em + .5vmax);
+    margin: 0;
+    transition: all ease 0.3s;
+    box-shadow: rgba(255, 255, 255, 0.622) 1px 0px 20px 0px;
+}
+
+
+.back:hover{
+    transform: scale(1.2);
+    transition: all ease 0.3s;
+    box-shadow: rgb(255, 255, 255) 0px 220px 700px 8000px;
+
+}
+
+.insec{
+    display: flex;
+    flex-direction: column;
+    height: 98.2vh;
+    align-items: center;
+    justify-content: center;
+    animation: insec 20s infinite;
+}
+
+.insec h6{
+    display: flex;
+    margin-top: 2vh;
+    font-size: calc(0.5rem + 0.7vmax);
+    font-family: 'Press Start 2P', cursive;
+    margin-inline: 3vw;
+}
+
+@keyframes insec {
+    0%{background-position: 500% 0%; color: #000000;}
+    25%{background-position: 0% 0%; color: rgb(255, 255, 255);}
+    50%{background-position: 0% 0%; color: rgb(255, 255, 255);}
+    75%{background-position: 0% 0%; color: rgb(255, 255, 255);}
+    95%{background-position: 0% 0%; color: rgb(83, 83, 83);}
+    100%{background-position: 500% 0%; color: #000000;}
+}
+
+#sumir{
+    animation: sumir 10s infinite;
+}
+
+@keyframes sumir {
+    0%{color: black;}
+    20%{color: #2dcdcd;}
+    30%{color: crimson;}
+    50%{color: darkolivegreen;}
+    60%{color: yellow;}
+    80%{color: chartreuse;}
+    100%{color: violet;}
+}

@@ -1,0 +1,108 @@
+body{
+    background-color: #4e6868;
+}
+
+
+.images{
+    display: flex;
+    flex-wrap: wrap;
+    height: 98.2vh;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.image{
+    height: 20vmax;
+    width: auto;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    transition: all ease 0.3s;
+}
+
+.image:hover{
+    transform: scale(2.5);
+    transition: all ease 0.3s;
+    box-shadow: rgb(0, 0, 0) 0px 220px 700px 800px;
+}
+
+.back{
+    position: absolute;
+    height: calc(0.5em + 2vmax);
+    filter: invert();
+    text-decoration: none;
+    font-size: calc(0.75em + .5vmax);
+    margin: 0;
+    transition: all ease 0.3s;
+    box-shadow: rgba(255, 255, 255, 0.622) 1px 0px 20px 0px;
+}
+
+
+.back:hover{
+    transform: scale(1.2);
+    transition: all ease 0.3s;
+    box-shadow: rgb(255, 255, 255) 0px 220px 700px 8000px;
+
+}
+
+
+.wa{
+    display: flex;
+    flex-direction: column;
+    height: 98.2vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.wa h6{
+    margin-top: 20px;
+    font-size: calc(0.5rem + 0.7vmax);
+    font-family: 'Press Start 2P', cursive;
+}
+
+#sumir{
+    animation: sumir 10s infinite;
+}
+
+@keyframes sumir {
+    0%{color: black;}
+    20%{color: #2dcdcd;}
+    30%{color: crimson;}
+    50%{color: darkolivegreen;}
+    60%{color: yellow;}
+    80%{color: chartreuse;}
+    100%{color: violet;}
+}
+
+.feel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    height: 98.2vh;
+}
+
+.feel h6{
+    font-family: 'Press Start 2P', cursive;
+    font-size: calc(0.5rem + 0.7vmax);
+    animation: her 10s infinite;
+}
+
+@keyframes her {
+    0%{color: rgb(255, 255, 255); font-size:calc(0.5rem + 0.7vmax);}
+    20%{color: #2dcdcd; font-size:calc(1.5rem + 3.7vmax);}
+    30%{color: crimson; font-size:calc(2.5rem + 0.7vmax);}
+    50%{color: darkolivegreen; font-size:calc(5.5rem + 2.7vmax);}
+    60%{color: yellow; font-size:calc(6.5rem + 8.7vmax);}
+    80%{color: chartreuse; font-size:calc(0.5rem + 2.7vmax);}
+    100%{color: violet; font-size:calc(0.5rem + 0.7vmax);}
+}
+
+.feelbody{
+    background-color: black;
+    animation: back 12s;
+    overflow: hidden;
+}
+
+@keyframes back{
+    0%{background-color: #4e6767;}
+    100%{background-color: black;}
+}
